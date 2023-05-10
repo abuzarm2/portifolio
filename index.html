@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abuzar | Web Developer</title>
+
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav>
+      <h1>Abuzar</h1>
+      <ul>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- hero -->
+    <section class="hero" id="about">
+      <img
+        src="/assets/images/character.png"
+        alt="Abuzar"
+        loading="lazy"
+        class="hero-img"
+      />
+      <div class="bio">
+        <h1 class="bio-title">Hi, I'm Abuzar. I design & build Web sites.</h1>
+      </div>
+    </section>
+
+    <!-- about me -->
+    <section class="more-about">
+      <h2>Hello there! My name is Abuzar</h2>
+      <p>
+        I'm a junior front-end developer with 2 years of experience in web
+        development. During my time as a developer, I have worked on a variety
+        of projects and collaborated closely with clients to deliver websites
+        that meet their needs and exceed their expectations.
+      </p>
+      <p>
+        I'm confident in my skills as a developer, but I'm also constantly
+        learning and looking for ways to improve. I believe in the power of
+        clear communication and always strive to keep my clients informed
+        throughout the development process.
+      </p>
+      <p>
+        When I'm not coding, you can find me hiking, reading, or exploring new
+        coffee shops. I'm excited to bring my passion for web development and my
+        love of collaboration to your next project. Thanks for stopping by!
+      </p>
+    </section>
+
+    <!-- skills -->
+    <section class="skills" id="skills">
+      <h2 class="skill-header">My Top Skills</h2>
+      <div class="skill-wrapper">
+        <div class="firstset">
+          <img
+            src="/assets/icons/icons8-html-5.svg"
+            loading="lazy"
+            class="icon icon-card"
+            alt="html"
+          />
+          <img
+            src="/assets/icons/icons8-css3.svg"
+            loading="lazy"
+            class="icon icon-card"
+            alt="css"
+          />
+          <img
+            src="/assets/icons/icons8-javascript.svg"
+            loading="lazy"
+            class="icon icon-card"
+            alt="js"
+          />
+        </div>
+        <div class="secondset">
+          <img
+            src="/assets/icons/icons8-bootstrap.svg"
+            loading="lazy"
+            class="icon icon-card"
+            alt="bootstrap"
+          />
+          <img
+            src="/assets/icons/icons8-react-native.svg"
+            loading="lazy"
+            class="icon icon-card"
+            alt="react"
+          />
+          <img
+            src="/assets/icons/icons8-git.svg"
+            loading="lazy"
+            class="icon icon-card"
+            alt="git"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- projects -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Some of my Recent Projects</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <img
+            src="/assets/images/expenseTracker.png"
+            alt="qrcode"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">QR component</h3>
+          <p class="project-details">
+            The QR code component is a tool that generates a scannable code that
+            contains information or a link, providing a quick and convenient way
+            for users to access content or information. It can be easily
+            integrated into various web or mobile applications
+          </p>
+        </div>
+        <div class="project-card">
+          <img
+            src="/assets/images/greenyEarth.png"
+            alt="earth"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Netflix Clone</h3>
+          <p class="project-details">
+            "Greeny Earth" is a web project I built using HTML, CSS, and
+            JavaScript. It's an interactive website aimed at promoting
+            environmental sustainability and educating people on ways to reduce
+            their carbon footprint. The project features a visually appealing
+            design and includes dynamic animations, interactive quizzes, and
+            informative articles.
+          </p>
+        </div>
+        <div class="project-card">
+          <img
+            src="/assets/images/netflixClone.png"
+            alt="netflix"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Greeny Earth</h3>
+          <p class="project-details">
+            I built a Netflix clone app using HTML, CSS, and JavaScript. The app
+            features a responsive design and includes functionalities such as a
+            search bar, a movie player, and a dynamic UI that displays movie
+            information.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+      <h2>Get in touch</h2>
+      <div class="contact-form-container">
+        <form action="https://formspree.io/f/xeqwdjgz" method="post">
+          <div class="form-control">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="sender-name"
+              placeholder="Enter your name"
+              class="input-field"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="sender-email"
+              placeholder="Enter your email"
+              class="input-field"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="mesaage"
+              cols="60"
+              rows="10"
+              class="input-field"
+              required
+            ></textarea>
+          </div>
+          <input
+            type="submit"
+            value="Submit"
+            id="submit-btn"
+            class="submit-btn"
+          />
+        </form>
+      </div>
+    </section>
+    <i class="scroll-up" id="scroll-up"
+      ><img
+        src="assets/icons/icons8-upward-arrow.gif"
+        class="socicon up-arrow"
+        alt="scroll-up"
+    /></i>
+    <!-- footer -->
+    <footer>
+      <p class="copy">&copy; Copyright 2023</p>
+      <p class="copy">
+        Built with &#x2661; by
+        <a href="https://www.linkedin.com/in/abuzar-mulla-82704595/" target="_blank"
+          >Abuzar Mulla</a
+        >
+      </p>
+    </footer>
+
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>
