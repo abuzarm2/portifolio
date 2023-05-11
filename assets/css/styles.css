@@ -76,6 +76,14 @@ nav ul {
 nav ul li {
   font-weight: var(--bold-font);
 }
+.burger-menu{
+  color: var(--primary-color);
+  background-color: transparent;
+  border: 0;
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
 .hero {
   display: flex;
   align-items: center;
@@ -232,4 +240,49 @@ footer {
 .up-arrow {
   width: 3rem;
   height: 3rem;
+}
+
+@media screen and (max-width:720px){
+  nav{
+    padding: 1.5rem 1rem;
+  }
+  nav ul{
+    position: fixed;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    top: 86px;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    transform: translateX(120%);
+    transition: transfrom 0.5s ease-in;
+  }
+  nav ul li{
+    margin: 8px;
+  }
+  .burger-menu{
+    display: block;
+  }
+  nav ul.show{
+    transform: translateX(0);
+  }
+  .hero{
+    margin: -0.2rem;
+    flex-direction: column;
+    
+  }
+  .bio{
+    width: 22rem;
+    text-align: center;
+  }
+  .icon{
+    height: 5.5rem;
+    width: 5.5rem;
+  }
+  .projects-container{
+    flex-direction: column;
+  }
+  .contact-form-container{
+    width: 30rem;
+  }
 }
